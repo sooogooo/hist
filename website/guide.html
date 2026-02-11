@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>阅读指南 - 红颜·史记</title>
+    <meta name="title" content="阅读指南 - 红颜·史记">
+    <meta name="description" content="《红颜·史记》阅读指南，包含全书结构概览、主题索引、人物索引与理论框架。了解五卷十八章的内容架构与分析工具。">
+    <meta name="keywords" content="红颜史记, 阅读指南, 主题索引, 人物索引, 理论框架, 章节概览">
+    <meta name="author" content="联合丽格美学通识写作小组">
+    <meta name="copyright" content="© 2026 《红颜·史记》 | 联合丽格美学通识系列写作小组">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://briefhistory.code.stemcell.gold/guide.html">
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+    <link rel="apple-touch-icon" href="/images/favicon.png">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://briefhistory.code.stemcell.gold/guide.html">
+    <meta property="og:title" content="阅读指南 - 红颜·史记">
+    <meta property="og:description" content="《红颜·史记》阅读指南，包含全书结构概览、主题索引、人物索引与理论框架。">
+    <meta property="og:image" content="https://briefhistory.code.stemcell.gold/images/logo.png">
+    <meta property="og:site_name" content="红颜·史记">
+    <meta property="og:locale" content="zh_CN">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://briefhistory.code.stemcell.gold/guide.html">
+    <meta property="twitter:title" content="阅读指南 - 红颜·史记">
+    <meta property="twitter:description" content="《红颜·史记》阅读指南，包含全书结构概览与理论框架。">
+    <meta property="twitter:image" content="https://briefhistory.code.stemcell.gold/images/logo.png">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "阅读指南",
+        "description": "《红颜·史记》阅读指南，包含全书结构概览、主题索引、人物索引与理论框架",
+        "image": "https://briefhistory.code.stemcell.gold/images/logo.png",
+        "author": {
+            "@type": "Organization",
+            "name": "联合丽格美学通识写作小组"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "联合丽格美学通识写作小组",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://briefhistory.code.stemcell.gold/images/logo.png"
+            }
+        },
+        "datePublished": "2026-02-05",
+        "dateModified": "2026-02-05",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://briefhistory.code.stemcell.gold/guide.html"
+        }
+    }
+    </script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.staticfile.org">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.staticfile.org/css2?family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        .guide-nav {
+            background-color: var(--color-paper-dark);
+            padding: var(--space-xl) var(--space-xl);
+            margin-bottom: var(--space-3xl);
+        }
+
+        .guide-nav-list {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--space-md);
+            justify-content: center;
+        }
+
+        .guide-nav-list a {
+            display: inline-block;
+            padding: var(--space-sm) var(--space-lg);
+            background-color: white;
+            border-radius: 4px;
+            font-size: var(--text-sm);
+            color: var(--color-ink-light);
+            border: 1px solid var(--color-border);
+            transition: all var(--transition-base);
+        }
+
+        .guide-nav-list a:hover {
+            background-color: var(--color-primary);
+            color: white;
+            border-color: var(--color-primary);
+        }
+
+        .toc-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .toc-section {
+            margin-bottom: var(--space-3xl);
+            padding-bottom: var(--space-2xl);
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .toc-section:last-child {
+            border-bottom: none;
+        }
+
+        .toc-title {
+            font-size: var(--text-2xl);
+            margin-bottom: var(--space-xl);
+            color: var(--color-primary);
+        }
+
+        .toc-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .toc-table th,
+        .toc-table td {
+            padding: var(--space-md);
+            text-align: left;
+            border-bottom: 1px solid var(--color-border);
+            font-size: var(--text-sm);
+        }
+
+        .toc-table th {
+            background-color: var(--color-paper-dark);
+            font-weight: 600;
+            color: var(--color-ink);
+        }
+
+        .toc-table tr:hover td {
+            background-color: var(--color-paper);
+        }
+
+        .alphabet-index {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: var(--space-md);
+        }
+
+        .alphabet-item {
+            padding: var(--space-md);
+            background-color: var(--color-paper);
+            border: 1px solid var(--color-border);
+            border-radius: 4px;
+        }
+
+        .alphabet-item h4 {
+            font-size: var(--text-sm);
+            color: var(--color-primary);
+            margin-bottom: var(--space-sm);
+        }
+
+        .alphabet-item ul {
+            font-size: var(--text-xs);
+            color: var(--color-ink-light);
+        }
+
+        .alphabet-item li {
+            padding: var(--space-xs) 0;
+        }
+
+        .theorist-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--space-md);
+        }
+
+        .theorist-item {
+            padding: var(--space-lg);
+            background-color: var(--color-paper);
+            border: 1px solid var(--color-border);
+            border-radius: 4px;
+        }
+
+        .theorist-item h4 {
+            font-size: var(--text-base);
+            margin-bottom: var(--space-sm);
+        }
+
+        .theorist-item p {
+            font-size: var(--text-sm);
+            color: var(--color-ink-light);
+        }
+
+        .reading-path {
+            padding: var(--space-xl);
+            background-color: var(--color-paper);
+            border-left: 4px solid var(--color-primary);
+            border-radius: 0 8px 8px 0;
+            margin: var(--space-xl) 0;
+        }
+
+        .reading-path h4 {
+            margin-bottom: var(--space-md);
+        }
+
+        .reading-path ol {
+            padding-left: var(--space-xl);
+        }
+
+        .reading-path li {
+            margin-bottom: var(--space-sm);
+            color: var(--color-ink-light);
+        }
+
+        .terminology {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-md);
+        }
+
+        .term-item {
+            padding: var(--space-lg);
+            background-color: var(--color-paper);
+            border-radius: 8px;
+            border: 1px solid var(--color-border);
+        }
+
+        .term-item h4 {
+            color: var(--color-primary);
+            margin-bottom: var(--space-sm);
+        }
+
+        .term-item p {
+            font-size: var(--text-sm);
+            color: var(--color-ink-light);
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-sm);
+            margin-bottom: var(--space-xl);
+            color: var(--color-primary);
+            font-size: var(--text-sm);
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="images/logo.png" alt="Logo" class="logo-img">
+                <span class="logo-text">红颜·史记</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">全书阅读</a></li>
+                <li><a href="guide.html" class="nav-link active">阅读指南</a></li>
+                <li><a href="outline.html" class="nav-link">完整大纲</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero" style="min-height: 40vh;">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">阅读指南</h1>
+            <p class="hero-subtitle">快速导航与内容索引</p>
+        </div>
+    </header>
+
+    <!-- Guide Navigation -->
+    <nav class="guide-nav">
+        <ul class="guide-nav-list">
+            <li><a href="#overview">全书概览</a></li>
+            <li><a href="#volumes-toc">章节目录</a></li>
+            <li><a href="#topics">主题索引</a></li>
+            <li><a href="#figures">人物索引</a></li>
+            <li><a href="#theories">理论框架</a></li>
+            <li><a href="#reading-paths">阅读路径</a></li>
+            <li><a href="#terminology">术语表</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <section class="section">
+        <div class="container toc-container">
+
+            <!-- Overview Section -->
+            <section id="overview" class="toc-section">
+                <h2 class="toc-title">一、全书结构概览</h2>
+
+                <table class="toc-table">
+                    <thead>
+                        <tr>
+                            <th>卷别</th>
+                            <th>书名</th>
+                            <th>核心主题</th>
+                            <th>章数</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>第一卷</strong></td>
+                            <td>权力的中央</td>
+                            <td>选妃、联姻与婚姻市场的制度分析</td>
+                            <td>3章</td>
+                        </tr>
+                        <tr>
+                            <td><strong>第二卷</strong></td>
+                            <td>话语的生产</td>
+                            <td>文学、图像与地方志中的审美建构</td>
+                            <td>3章</td>
+                        </tr>
+                        <tr>
+                            <td><strong>第三卷</strong></td>
+                            <td>制度的剥削</td>
+                            <td>妾、青楼与教化制度的运作机制</td>
+                            <td>3章</td>
+                        </tr>
+                        <tr>
+                            <td><strong>第四卷</strong></td>
+                            <td>个案的深度</td>
+                            <td>五大历史美女的制度分析</td>
+                            <td>6章</td>
+                        </tr>
+                        <tr>
+                            <td><strong>第五卷</strong></td>
+                            <td>综合与反思</td>
+                            <td>制度根源、身体政治与理论建构</td>
+                            <td>3章</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div style="margin-top: var(--space-xl);">
+                    <h3 style="font-size: var(--text-lg); margin-bottom: var(--space-md);">三层结构框架</h3>
+                    <table class="toc-table">
+                        <thead>
+                            <tr>
+                                <th>层次</th>
+                                <th>功能</th>
+                                <th>内容要点</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>叙事层</strong></td>
+                                <td>描述"是什么"</td>
+                                <td>历史演变、文本形成、话语传播</td>
+                            </tr>
+                            <tr>
+                                <td><strong>人物层</strong></td>
+                                <td>分析"谁在做"</td>
+                                <td>典型案例、生存策略、历史人物</td>
+                            </tr>
+                            <tr>
+                                <td><strong>制度层</strong></td>
+                                <td>解释"为什么"</td>
+                                <td>运作机制、结构约束、权力关系</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Volumes TOC Section -->
+            <section id="volumes-toc" class="toc-section">
+                <h2 class="toc-title">二、章节目录</h2>
+
+                <div class="reading-path">
+                    <h4>阅读建议</h4>
+                    <ol>
+                        <li>各章节相对独立，可按顺序阅读，也可根据兴趣选读</li>
+                        <li>每章包含"分析工具"部分，适合对理论框架感兴趣的读者</li>
+                        <li>"决策场景"和"反事实测试"为虚构情境，旨在帮助理解历史逻辑</li>
+                        <li>各章结尾的"史料出处说明"标注了史料可靠性等级</li>
+                    </ol>
+                </div>
+
+                <h3 style="font-size: var(--text-lg); margin-bottom: var(--space-md);">第一卷：权力的中央</h3>
+                <ul class="chapter-list" style="margin-bottom: var(--space-xl);">
+                    <li>第一章 选妃制度——国家如何定义美</li>
+                    <li>第二章 联姻策略——美女资源的政治配置</li>
+                    <li>第三章 婚姻市场——民间审美与阶层流动</li>
+                </ul>
+
+                <h3 style="font-size: var(--text-lg); margin-bottom: var(--space-md);">第二卷：话语的生产</h3>
+                <ul class="chapter-list" style="margin-bottom: var(--space-xl);">
+                    <li>第四章 文学书写——男性凝视的文本化</li>
+                    <li>第五章 图像生产——绘画中的女性身体</li>
+                    <li>第六章 方志书写——地方性审美知识的生产</li>
+                </ul>
+
+                <h3 style="font-size: var(--text-lg); margin-bottom: var(--space-md);">第三卷：制度的剥削</h3>
+                <ul class="chapter-list" style="margin-bottom: var(--space-xl);">
+                    <li>第七章 妾制度——法律框架中的女性商品化</li>
+                    <li>第八章 青楼制度——制度化的女性剥削</li>
+                    <li>第九章 教化制度——女性美德的规训</li>
+                </ul>
+
+                <h3 style="font-size: var(--text-lg); margin-bottom: var(--space-md);">第四卷：个案的深度</h3>
+                <ul class="chapter-list" style="margin-bottom: var(--space-xl);">
+                    <li>第十章 西施——间谍、祭品与符号</li>
+                    <li>第十一章 王昭君——和亲叙事的裂隙</li>
+                    <li>第十二章 貂蝉——虚构与历史的缝隙</li>
+                    <li>第十三章 杨贵妃——从儿媳到宠妃的制度跨越</li>
+                    <li>第十四章 陈圆圆——权力更迭中的"祸水"</li>
+                    <li>第十五章 柳如是——易代之际的知识女性</li>
+                </ul>
+
+                <h3 style="font-size: var(--text-lg); margin-bottom: var(--space-md);">第五卷：综合与反思</h3>
+                <ul class="chapter-list" style="margin-bottom: var(--space-xl);">
+                    <li>第十六章 "红颜薄命"的制度根源</li>
+                    <li>第十七章 审美的生产、流通与消费</li>
+                    <li>第十八章 身体政治——女性美的国家管控</li>
+                </ul>
+            </section>
+
+            <!-- Topics Index Section -->
+            <section id="topics" class="toc-section">
+                <h2 class="toc-title">三、主题索引（节选）</h2>
+
+                <div class="alphabet-index">
+                    <div class="alphabet-item">
+                        <h4>B</h4>
+                        <ul>
+                            <li>八旗选秀 — 第一卷第一章</li>
+                            <li>悲剧机制 — 第五卷第十六章</li>
+                        </ul>
+                    </div>
+                    <div class="alphabet-item">
+                        <h4>C</h4>
+                        <ul>
+                            <li>陈圆圆 — 第四卷第十四章</li>
+                            <li>才女文化 — 第二卷</li>
+                        </ul>
+                    </div>
+                    <div class="alphabet-item">
+                        <h4>F</h4>
+                        <ul>
+                            <li>福柯规训理论 — 第三卷第九章</li>
+                            <li>父权制度 — 第三卷第七章</li>
+                        </ul>
+                    </div>
+                    <div class="alphabet-item">
+                        <h4>H</h4>
+                        <ul>
+                            <li>和亲制度 — 第一卷第二章</li>
+                            <li>红颜薄命 — 第五卷第十六章</li>
+                            <li>红颜祸水 — 第四卷第十章</li>
+                        </ul>
+                    </div>
+                    <div class="alphabet-item">
+                        <h4>J</h4>
+                        <ul>
+                            <li>交易成本 — 第一卷第二章</li>
+                            <li>教化制度 — 第三卷第九章</li>
+                        </ul>
+                    </div>
+                    <div class="alphabet-item">
+                        <h4>K</h4>
+                        <ul>
+                            <li>科举制度 — 第二卷第四章</li>
+                        </ul>
+                    </div>
+                    <div class="alphabet-item">
+                        <h4>L</h4>
+                        <ul>
+                            <li>柳如是 — 第四卷第十五章</li>
+                            <li>李香君 — 第三卷第八章</li>
+                        </ul>
+                    </div>
+                    <div class="alphabet-item">
+                        <h4>M</h4>
+                        <ul>
+                            <li>马嵬驿 — 第四卷第十三章</li>
+                        </ul>
+                    </div>
+                    <div class="alphabet-item">
+                        <h4>N</h4>
+                        <ul>
+                            <li>纳妾制度 — 第三卷第七章</li>
+                            <li>男性凝视 — 第二卷第四、五章</li>
+                        </ul>
+                    </div>
+                    <div class="alphabet-item">
+                        <h4>S</h4>
+                        <ul>
+                            <li>审美标准 — 第一卷第一章</li>
+                            <li>身体政治 — 第五卷第十八章</li>
+                        </ul>
+                    </div>
+                    <div class="alphabet-item">
+                        <h4>W</h4>
+                        <ul>
+                            <li>王昭君 — 第四卷第十一章</li>
+                        </ul>
+                    </div>
+                    <div class="alphabet-item">
+                        <h4>X</h4>
+                        <ul>
+                            <li>西施 — 第四卷第十章</li>
+                            <li>选妃制度 — 第一卷第一章</li>
+                        </ul>
+                    </div>
+                    <div class="alphabet-item">
+                        <h4>Y</h4>
+                        <ul>
+                            <li>杨贵妃 — 第四卷第十三章</li>
+                            <li>鱼玄机 — 第三卷第八章</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Figures Index Section -->
+            <section id="figures" class="toc-section">
+                <h2 class="toc-title">四、人物索引</h2>
+
+                <table class="toc-table">
+                    <thead>
+                        <tr>
+                            <th>人物姓名</th>
+                            <th>时代</th>
+                            <th>相关章节</th>
+                            <th>主要身份</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>班婕妤</td><td>汉</td><td>第五卷第十六章</td><td>以德比容的典范</td></tr>
+                        <tr><td>陈圆圆</td><td>明末清初</td><td>第四卷第十四章</td><td>秦淮名妓</td></tr>
+                        <tr><td>貂蝉</td><td>东汉末年</td><td>第四卷第十二章</td><td>虚构与历史的缝隙</td></tr>
+                        <tr><td>杜十娘</td><td>明</td><td>第三卷第七章</td><td>妓女从良的悲剧</td></tr>
+                        <tr><td>柳如是</td><td>明末清初</td><td>第四卷第十五章</td><td>秦淮八艳之一</td></tr>
+                        <tr><td>王昭君</td><td>汉</td><td>第四卷第十一章</td><td>和亲公主</td></tr>
+                        <tr><td>文成公主</td><td>唐</td><td>第一卷第二章</td><td>唐代和亲公主</td></tr>
+                        <tr><td>西施</td><td>春秋</td><td>第四卷第十章</td><td>间谍、祭品与符号</td></tr>
+                        <tr><td>解忧公主</td><td>汉</td><td>第一卷第二章</td><td>三嫁乌孙</td></tr>
+                        <tr><td>薛涛</td><td>唐</td><td>第三卷第八章</td><td>名妓，诗人</td></tr>
+                        <tr><td>杨贵妃</td><td>唐</td><td>第四卷第十三章</td><td>从儿媳到宠妃</td></tr>
+                        <tr><td>鱼玄机</td><td>唐</td><td>第三卷第八章</td><td>名妓，诗人</td></tr>
+                        <tr><td>卓文君</td><td>汉</td><td>第二卷第四章</td><td>被退货危机的典范</td></tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Theories Section -->
+            <section id="theories" class="toc-section">
+                <h2 class="toc-title">五、理论框架索引</h2>
+
+                <h3 style="font-size: var(--text-lg); margin-bottom: var(--space-md);">主要理论工具</h3>
+                <table class="toc-table" style="margin-bottom: var(--space-xl);">
+                    <thead>
+                        <tr>
+                            <th>理论名称</th>
+                            <th>章节</th>
+                            <th>应用领域</th>
+                            <th>主要概念</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>博弈论</td><td>第一卷第二章</td><td>联姻决策分析</td><td>信号传递、纳什均衡</td></tr>
+                        <tr><td>交易成本理论</td><td>第一卷第二章</td><td>联姻制度分析</td><td>信息成本、谈判成本</td></tr>
+                        <tr><td>寻租理论</td><td>第一卷第一章</td><td>选秀与联姻</td><td>设租、寻租、创租</td></tr>
+                        <tr><td>福柯话语理论</td><td>第二卷第四章</td><td>文学书写</td><td>话语建构、权力运作</td></tr>
+                        <tr><td>凝视理论</td><td>第二卷第五章</td><td>图像生产</td><td>男性凝视、客体化</td></tr>
+                        <tr><td>布尔迪厄场域理论</td><td>第五卷第十七章</td><td>审美生产</td><td>场域、资本、位置</td></tr>
+                        <tr><td>福柯规训理论</td><td>第三卷第九章</td><td>教化制度</td><td>层级监视、规范化裁决</td></tr>
+                        <tr><td>脆弱性理论</td><td>第五卷第十六章</td><td>红颜薄命</td><td>资源剥夺、选择限制</td></tr>
+                    </tbody>
+                </table>
+
+                <h3 style="font-size: var(--text-lg); margin-bottom: var(--space-md);">理论人物</h3>
+                <div class="theorist-list">
+                    <div class="theorist-item">
+                        <h4>皮埃尔·布尔迪厄</h4>
+                        <p>场域理论、文化资本理论 — 第二卷、第五卷</p>
+                    </div>
+                    <div class="theorist-item">
+                        <h4>米歇尔·福柯</h4>
+                        <p>话语理论、规训理论 — 第二卷、第三卷、第五卷</p>
+                    </div>
+                    <div class="theorist-item">
+                        <h4>劳拉·穆尔维</h4>
+                        <p>凝视理论 — 第二卷第五章</p>
+                    </div>
+                    <div class="theorist-item">
+                        <h4>卡尔·马克思</h4>
+                        <p>劳动剥削理论 — 第三卷第八章</p>
+                    </div>
+                    <div class="theorist-item">
+                        <h4>罗纳德·科斯</h4>
+                        <p>产权理论、交易成本理论 — 第三卷</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Reading Paths Section -->
+            <section id="reading-paths" class="toc-section">
+                <h2 class="toc-title">六、阅读路径建议</h2>
+
+                <div class="reading-path">
+                    <h4>按兴趣选读</h4>
+                    <table class="toc-table">
+                        <thead>
+                            <tr><th>兴趣方向</th><th>推荐章节</th><th>理由</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>制度史爱好者</td><td>第一卷全卷、第三卷全卷</td><td>制度分析的核心内容</td></tr>
+                            <tr><td>女性主义视角</td><td>第三卷全卷、第五卷</td><td>性别制度的批判分析</td></tr>
+                            <tr><td>历史人物爱好者</td><td>第四卷全卷</td><td>五大历史美女的深度分析</td></tr>
+                            <tr><td>理论框架学习</td><td>各章"分析工具"部分</td><td>社会科学理论的系统应用</td></tr>
+                            <tr><td>文学与艺术</td><td>第二卷全卷</td><td>文学与图像中的女性形象</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div style="margin-top: var(--space-xl);">
+                    <h3 style="font-size: var(--text-lg); margin-bottom: var(--space-md);">阅读顺序建议</h3>
+
+                    <h4 style="margin-bottom: var(--space-sm);">顺序阅读（全套5卷18章）</h4>
+                    <p style="margin-bottom: var(--space-lg); color: var(--color-ink-light);">适合完整理解本书的逻辑体系，从宏观到微观，从理论到案例</p>
+
+                    <h4 style="margin-bottom: var(--space-sm);">专题阅读（按主题）</h4>
+                    <ul style="margin-bottom: var(--space-lg); color: var(--color-ink-light); padding-left: var(--space-xl);">
+                        <li>制度剥削：第三卷 → 第五卷第十六章</li>
+                        <li>话语生产：第二卷 → 第五卷第十七章</li>
+                        <li>历史人物：第四卷 → 第一、二卷相关章节</li>
+                    </ul>
+
+                    <h4 style="margin-bottom: var(--space-sm);">快速入门</h4>
+                    <p style="color: var(--color-ink-light);">导论 → 第十六章（理论框架）→ 选择感兴趣的第四卷章节</p>
+                </div>
+            </section>
+
+            <!-- Terminology Section -->
+            <section id="terminology" class="toc-section">
+                <h2 class="toc-title">七、术语表</h2>
+
+                <div class="terminology">
+                    <div class="term-item">
+                        <h4>三层结构框架</h4>
+                        <p>本书采用的分析框架，包括叙事层（描述"是什么"）、人物层（分析"谁在做"）、制度层（解释"为什么"）。</p>
+                    </div>
+                    <div class="term-item">
+                        <h4>男性凝视</h4>
+                        <p>女性形象从男性视角被建构和观看的权力关系。（第二卷第四章）</p>
+                    </div>
+                    <div class="term-item">
+                        <h4>地方性审美知识</h4>
+                        <p>在特定地域产生的关于"美"的判断和标准。（第二卷第六章）</p>
+                    </div>
+                    <div class="term-item">
+                        <h4>红颜薄命</h4>
+                        <p>女性因其美貌而遭遇不幸命运的传统叙事。（第五卷第十六章）</p>
+                    </div>
+                    <div class="term-item">
+                        <h4>制度脆弱性</h4>
+                        <p>个体面对风险时的暴露程度和应对能力的有限性。（第五卷第十六章）</p>
+                    </div>
+                    <div class="term-item">
+                        <h4>审美场域</h4>
+                        <p>审美生产和消费的社会空间。（第五卷第十七章）</p>
+                    </div>
+                    <div class="term-item">
+                        <h4>身体政治</h4>
+                        <p>权力对身体的规训和管理。（第五卷第十八章）</p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="images/logo.png" alt="Logo" class="footer-logo">
+                    <h3>红颜·史记</h3>
+                    <p>一部另类的中国女性史</p>
+                    <div class="footer-contact">
+                        <p><strong>合作联系</strong></p>
+                        <p>微信：sooogooo | 邮箱：yuxiaodong@beaucare.org</p>
+                        <p class="copyright-note">版权所有，注明出处"联合丽格美学通识写作小组"</p>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="guide.html">阅读指南</a></li>
+                        <li><a href="outline.html">完整大纲</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>其他作品</h4>
+                    <ul>
+                        <li><a href="https://lipsbook.code.stemcell.gold/" target="_blank">绛唇解语花 | 专业唇部美学医学专著</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>关于我们</h4>
+                    <ul>
+                        <li><a href="#" class="footer-modal-link" data-modal="privacy">隐私说明</a></li>
+                        <li><a href="#" class="footer-modal-link" data-modal="about">关于我们</a></li>
+                        <li><a href="#" class="footer-modal-link" data-modal="ai">AI辅助说明</a></li>
+                        <li><a href="#" class="footer-modal-link" data-modal="publish">出版合作</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-tags">
+                    <span class="tag">丽格美学</span>
+                    <span class="tag">射频细胞</span>
+                    <a href="https://beian.miit.gov.cn/" target="_blank" class="icp-link">京 ICP 备 20009050 号-3</a>
+                </div>
+                <p>&copy; 2026 《红颜·史记》 | 丽格美学通识系列写作小组</p>
+                <p class="report-link">内容合规举报：<a href="mailto:yuxiaodong@beaucare.org">yuxiaodong@beaucare.org</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+
+    <!-- Footer Modals -->
+    <div id="modal-privacy" class="footer-modal">
+        <div class="footer-modal-content">
+            <button class="footer-modal-close">&times;</button>
+            <h2>隐私说明</h2>
+            <div class="footer-modal-body">
+                <p><strong>静态网站，不跟踪，不记录</strong></p>
+                <p>本站为纯静态网站，不使用任何 Analytics 工具，不收集用户隐私数据。</p>
+                <p><strong>访问日志</strong></p>
+                <p>服务器仅记录基本访问日志用于安全防护，不会分析用户行为或追踪用户隐私。</p>
+                <p><strong>Cookies</strong></p>
+                <p>本站不使用任何 Cookies，用户的浏览记录不会被保存。</p>
+                <p><strong>版权声明</strong></p>
+                <p>本站所有内容版权归原作者及出版方所有。未经授权，禁止转载、复制或传播。引用请注明出处。</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-about" class="footer-modal">
+        <div class="footer-modal-content">
+            <button class="footer-modal-close">&times;</button>
+            <h2>关于我们</h2>
+            <div class="footer-modal-body">
+                <p><strong>联合丽格美学研究小组 & 写作小组</strong></p>
+                <p>我们是由医学、美学、历史等多学科背景研究者组成的跨学科团队。</p>
+                <p><strong>使命</strong></p>
+                <p>构建中国医疗美容的完整美学体系，从历史、文化、科学等多维度梳理美学发展脉络。</p>
+                <p><strong>《红颜·史记》</strong></p>
+                <p>本作品是美学体系研究的重要组成部分，从制度分析视角审视中国古代女性命运。</p>
+                <p><strong>持续更新</strong></p>
+                <p>本作品将陆续更新、出版更多章节和卷册。</p>
+                <p><strong>加入我们</strong></p>
+                <p>欢迎有志之士加入我们的研究写作团队，共同推进美学体系建设。</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-ai" class="footer-modal">
+        <div class="footer-modal-content">
+            <button class="footer-modal-close">&times;</button>
+            <h2>AI辅助说明</h2>
+            <div class="footer-modal-body">
+                <p><strong>AI辅助资料查阅与交叉验证</strong></p>
+                <p>本系列书籍在研究和写作过程中，采用 AI 辅助进行资料搜集、文献梳理和交叉验证。</p>
+                <p><strong>AI内容明确标记</strong></p>
+                <p>所有由 AI 辅助生成或验证的内容，我们都会在相应位置进行明确标记，以确保学术透明性。</p>
+                <p><strong>人工审核</strong></p>
+                <p>AI 仅作为辅助工具，所有内容均经过人工审核、校正和补充，确保学术严谨性。</p>
+                <p><strong>责任声明</strong></p>
+                <p>如有引用或分析错误，责任由作者团队承担，欢迎读者指正。</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-publish" class="footer-modal">
+        <div class="footer-modal-content">
+            <button class="footer-modal-close">&times;</button>
+            <h2>出版合作</h2>
+            <div class="footer-modal-body">
+                <p><strong>合作邀请</strong></p>
+                <p>我们欢迎各大出版社、IP产业机构开展多种形式的合作。</p>
+                <p><strong>合作形式</strong></p>
+                <ul>
+                    <li>纸质图书出版</li>
+                    <li>电子书发行</li>
+                    <li>有声书制作</li>
+                    <li>影视改编</li>
+                    <li>文化IP授权</li>
+                    <li>学术合作</li>
+                </ul>
+                <p><strong>联系我们</strong></p>
+                <p>微信：sooogooo</p>
+                <p>邮箱：yuxiaodong@beaucare.org</p>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .footer-links ul { list-style: none; padding: 0; }
+        .footer-links ul li { margin-bottom: 8px; }
+        .footer-links .footer-modal-link { color: var(--color-text-light); text-decoration: none; cursor: pointer; }
+        .footer-links .footer-modal-link:hover { color: var(--color-primary); }
+        .footer-modal { display: none; position: fixed; z-index: 10000; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); }
+        .footer-modal-content { background: var(--color-paper); margin: 10% auto; padding: 40px; border-radius: 12px; width: 90%; max-width: 600px; position: relative; }
+        .footer-modal-close { position: absolute; right: 20px; top: 15px; font-size: 28px; background: none; border: none; cursor: pointer; color: var(--color-text-light); }
+        .footer-modal-close:hover { color: var(--color-primary); }
+        .footer-modal h2 { color: var(--color-primary); font-family: var(--font-serif); margin-bottom: 24px; padding-bottom: 12px; border-bottom: 2px solid var(--color-border); }
+        .footer-modal-body { color: var(--color-text); line-height: 1.8; }
+        .footer-modal-body p { margin-bottom: 16px; }
+        .footer-modal-body ul { margin: 16px 0; padding-left: 24px; }
+        .footer-modal-body li { margin-bottom: 8px; }
+    </style>
+
+    <script>
+        (function() {
+            const modalLinks = document.querySelectorAll('.footer-modal-link');
+            const modals = document.querySelectorAll('.footer-modal');
+            const closeBtns = document.querySelectorAll('.footer-modal-close');
+
+            modalLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const modalId = this.getAttribute('data-modal');
+                    const modal = document.getElementById('modal-' + modalId);
+                    if (modal) { modal.style.display = 'block'; document.body.style.overflow = 'hidden'; }
+                });
+            });
+
+            closeBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    this.closest('.footer-modal').style.display = 'none';
+                    document.body.style.overflow = '';
+                });
+            });
+
+            window.addEventListener('click', function(e) {
+                if (e.target.classList.contains('footer-modal')) {
+                    e.target.style.display = 'none';
+                    document.body.style.overflow = '';
+                }
+            });
+
+            window.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') {
+                    modals.forEach(modal => modal.style.display = 'none');
+                    document.body.style.overflow = '';
+                }
+            });
+        })();
+    </script>
+</body>
+</html>

@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第一卷 美的政治经济学 - 红颜·史记</title>
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/reading.css">
+    <link rel="stylesheet" href="../css/ai-assistant.css">
+    <link rel="preconnect" href="https://fonts.staticfile.org">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.staticfile.org/css2?family=Noto+Serif+SC:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="reading-mode">
+    <nav class="read-nav" id="readNav">
+        <div class="read-nav-left">
+            <a href="../index.html" class="back-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7"/>
+                </svg>
+                返回首页
+            </a>
+        </div>
+        <div class="read-nav-center">
+            <a href="../index.html" class="nav-logo">
+                <img src="../images/logo.png" alt="logo" height="48">
+            </a>
+            <a href="../read.html" class="chapter-label">《红颜·史记》</a>
+            <span class="site-branding"> | 联合丽格 丽格美学通识写作小组</span>
+        </div>
+        <div class="read-nav-right">
+            <button class="nav-btn share-btn" id="shareBtn" title="分享到微信">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/>
+                    <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
+                </svg>
+            </button>
+            <button class="nav-btn" id="toggleToc" title="目录">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <aside class="toc-sidebar" id="tocSidebar">
+        <div class="toc-header">
+            <h3>全书目录</h3>
+            <button class="close-toc" id="closeToc">&times;</button>
+        </div>
+        <nav class="toc-nav">
+            <div class="toc-part"><a href="../introduction.html" class="toc-part-title">导论</a></div>
+            <div class="toc-part"><a href="volume1.html" class="toc-part-title active">第一卷 · 美的政治经济学</a>
+                <ul class="toc-chapters">
+                    <li><a href="v1c01.html">第一章 选妃制度：国家如何定义美</a></li>
+                    <li><a href="v1c02.html">第二章 联姻策略：美女资源的政治配置</a></li>
+                    <li><a href="v1c03.html">第三章 婚姻市场：民间审美与阶层流动</a></li>
+                </ul>
+            </div>
+            <div class="toc-part"><a href="volume2.html" class="toc-part-title">第二卷 · 话语的生产</a>
+                <ul class="toc-chapters">
+                    <li><a href="v2c04.html">第四章 文学书写</a></li>
+                    <li><a href="v2c05.html">第五章 图像生产</a></li>
+                    <li><a href="v2c06.html">第六章 方志书写</a></li>
+                </ul>
+            </div>
+            <div class="toc-part"><a href="volume3.html" class="toc-part-title">第三卷 · 制度的剥削</a>
+                <ul class="toc-chapters">
+                    <li><a href="v3c07.html">第七章 妾制度</a></li>
+                    <li><a href="v3c08.html">第八章 青楼制度</a></li>
+                    <li><a href="v3c09.html">第九章 教化制度</a></li>
+                </ul>
+            </div>
+            <div class="toc-part"><a href="volume4.html" class="toc-part-title">第四卷 · 个案的深度</a>
+                <ul class="toc-chapters">
+                    <li><a href="v4c10.html">第十章 西施</a></li>
+                    <li><a href="v4c11.html">第十一章 王昭君</a></li>
+                    <li><a href="v4c12.html">第十二章 貂蝉</a></li>
+                    <li><a href="v4c13.html">第十三章 杨贵妃</a></li>
+                    <li><a href="v4c14.html">第十四章 陈圆圆</a></li>
+                    <li><a href="v4c15.html">第十五章 柳如是</a></li>
+                </ul>
+            </div>
+            <div class="toc-part"><a href="volume5.html" class="toc-part-title">第五卷 · 综合与反思</a>
+                <ul class="toc-chapters">
+                    <li><a href="v5c16.html">第十六章 红颜薄命</a></li>
+                    <li><a href="v5c17.html">第十七章 审美生产</a></li>
+                    <li><a href="v5c18.html">第十八章 身体政治</a></li>
+                </ul>
+            </div>
+            <div class="toc-part"><a href="../conclusion.html" class="toc-part-title">结论</a></div>
+        </nav>
+    </aside>
+
+    <!-- Overlay for sidebar -->
+    <div class="overlay" id="overlay"></div>
+
+    <main class="reading-container">
+        <article class="chapter-content">
+            <h1>第一卷：美的政治经济学</h1>
+
+            <p style="text-align: center; font-size: 1.1em; color: var(--color-text-light);">
+                选妃制度、联姻策略与婚姻市场的制度分析
+            </p>
+
+            <hr>
+
+            <h2>本卷概述</h2>
+
+            <p>第一卷聚焦于"美"如何被纳入政治经济体系，成为一种可被生产、交易、投资的人力资本。我们将从三个层面分析这一问题：</p>
+
+            <ul>
+                <li><strong>叙事层</strong>：从汉代到清代，选妃制度如何演变？联姻策略如何运作？民间婚姻市场如何运转？</li>
+                <li><strong>人物层</strong>：成功入选的秀女命运如何？落选者又何去何从？和亲公主们的人生轨迹是怎样的？</li>
+                <li><strong>制度层</strong>：户籍制度如何与选秀范围对应？审美标准如何中央集权化？联姻链条中的利益如何分配？</li>
+            </ul>
+
+            <hr>
+
+            <h2>章节概览</h2>
+
+            <div class="chapter-list-full">
+                <div class="chapter-item">
+                    <a href="v1c01.html">
+                        <span class="chapter-num">01</span>
+                        <div class="chapter-info">
+                            <h3>选妃制度：国家如何定义美</h3>
+                            <p>宫廷需要什么样的美人？这一标准如何形成？选秀制度如何将民间审美纳入国家秩序？</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="chapter-item">
+                    <a href="v1c02.html">
+                        <span class="chapter-num">02</span>
+                        <div class="chapter-info">
+                            <h3>联姻策略：美女资源的政治配置</h3>
+                            <p>美女如何被家族用于政治投资？"和亲"制度中的女性身体如何被"国家化"？</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="chapter-item">
+                    <a href="v1c03.html">
+                        <span class="chapter-num">03</span>
+                        <div class="chapter-info">
+                            <h3>婚姻市场：民间审美与阶层流动</h3>
+                            <p>在宫廷之外，"美"是如何在民间被定义和交易的？婚姻市场如何影响民间审美？</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <hr>
+
+            <h2>核心概念</h2>
+
+            <table>
+                <thead>
+                    <tr><th>概念</th><th>定义</th><th>应用章节</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td><strong>选妃制度</strong></td><td>国家将民间女性纳入宫廷体系的制度安排</td><td>第一章</td></tr>
+                    <tr><td><strong>联姻策略</strong></td><td>利用女性进行政治联盟的外交手段</td><td>第二章</td></tr>
+                    <tr><td><strong>婚姻市场</strong></td><td>女性作为婚配对象进行交易的场所</td><td>第三章</td></tr>
+                    <tr><td><strong>审美中央集权化</strong></td><td>定义"美"的权力从地方收归中央的过程</td><td>第一章</td></tr>
+                    <tr><td><strong>人力资本</strong></td><td>美貌作为可投资、积累、交易的人力资本</td><td>全卷</td></tr>
+                </tbody>
+            </table>
+
+            <hr>
+
+            <h2>分析工具</h2>
+
+            <div class="tools-box">
+                <h4>本卷使用的理论工具</h4>
+                <ul>
+                    <li><strong>寻租理论</strong>：选秀中的腐败与寻租机会</li>
+                    <li><strong>信息不对称</strong>：选妃标准的不透明</li>
+                    <li><strong>博弈论</strong>：和亲是"合作信号"还是"绥靖政策"？</li>
+                    <li><strong>交易成本理论</strong>：打仗 vs. 嫁女的经济学比较</li>
+                </ul>
+            </div>
+
+        </article>
+
+        <nav class="chapter-nav">
+            <a href="../introduction.html" class="chapter-nav-btn prev">
+                <span class="nav-direction">上一卷</span>
+                <span class="nav-title">导论</span>
+            </a>
+            <a href="v1c01.html" class="chapter-nav-btn next">
+                <span class="nav-direction">开始阅读</span>
+                <span class="nav-title">第一章 选妃制度</span>
+            </a>
+        </nav>
+    </main>
+
+    <style>
+        .chapter-list-full { margin: 2em 0; }
+        .chapter-item { margin-bottom: 1.5em; }
+        .chapter-item a {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5em;
+            padding: 1.5em;
+            background: var(--color-highlight);
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        .chapter-item a:hover {
+            background: var(--color-border);
+            transform: translateX(5px);
+        }
+        .chapter-num {
+            flex-shrink: 0;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--color-accent);
+            color: white;
+            font-family: var(--font-serif);
+            font-size: 1.2em;
+            font-weight: 600;
+            border-radius: 50%;
+        }
+        .chapter-info h3 {
+            font-size: 1.1em;
+            margin-bottom: 0.5em;
+            color: var(--color-text);
+        }
+        .chapter-info p {
+            font-size: 0.9em;
+            color: var(--color-text-light);
+            margin: 0;
+        }
+        .tools-box {
+            background: var(--color-highlight);
+            border-left: 4px solid var(--color-accent);
+            padding: 1.5em;
+            border-radius: 0 8px 8px 0;
+        }
+        .tools-box h4 {
+            color: var(--color-accent);
+            margin-bottom: 1em;
+        }
+        .tools-box ul { margin: 0; padding-left: 1.5em; }
+        .tools-box li { margin-bottom: 0.5em; color: var(--color-text-light); }
+    </style>
+
+    <footer class="footer footer-reading">
+        <div class="container">
+            <div class="footer-contact-row">
+                <p class="copyright-note">合作联系 · 微信：sooogooo | 邮箱：yuxiaodong@beaucare.org</p>
+                <p class="copyright-note">|</p>
+                <p class="copyright-note"><a href="https://lipsbook.code.stemcell.gold/" target="_blank" style="color: var(--color-primary);">绛唇解语花 | 专业唇部美学医学专著</a></p>
+            </div>
+            <div class="footer-tags">
+                <span class="tag">丽格美学</span>
+                <span class="tag">射频细胞</span>
+                <a href="https://beian.miit.gov.cn/" target="_blank" class="icp-link">京 ICP 备 20009050 号-3</a>
+            </div>
+            <p>&copy; 2026 《红颜·史记》 | 丽格美学通识系列写作小组</p>
+            <p class="site-link">本站部署于 <a href="https://briefhistory.code.stemcell.gold" target="_blank">https://briefhistory.code.stemcell.gold</a></p>
+        </div>
+    </footer>
+
+    <style>
+        .footer-reading {
+            background-color: var(--color-paper-dark);
+            color: var(--color-ink);
+            padding: var(--space-xl) var(--space-lg);
+            border-top: 1px solid var(--color-border);
+        }
+        .footer-reading .footer-tags {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: var(--space-md);
+            margin-bottom: var(--space-md);
+            flex-wrap: wrap;
+        }
+        .footer-reading .tag {
+            display: inline-block;
+            padding: var(--space-xs) var(--space-sm);
+            background: var(--color-border);
+            border-radius: 4px;
+            font-size: var(--text-xs);
+            color: var(--color-ink-light);
+        }
+        .footer-reading .icp-link {
+            color: var(--color-ink-muted) !important;
+            font-size: var(--text-xs) !important;
+            text-decoration: none;
+        }
+        .footer-reading .icp-link:hover {
+            color: var(--color-primary) !important;
+            text-decoration: underline;
+        }
+        .footer-reading p {
+            color: var(--color-ink-muted);
+            font-size: var(--text-xs);
+            text-align: center;
+            margin-bottom: var(--space-xs);
+        }
+        .footer-reading .site-link a {
+            color: var(--color-primary);
+        }
+        .footer-reading .site-link a:hover {
+            text-decoration: underline;
+        }
+        .footer-reading .footer-contact-row {
+            display: flex;
+            justify-content: center;
+            gap: var(--space-xl);
+            flex-wrap: wrap;
+            margin-bottom: var(--space-md);
+        }
+        .footer-reading .copyright-note {
+            color: var(--color-ink-light);
+        }
+        .share-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: var(--space-sm);
+            border-radius: 4px;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            gap: var(--space-xs);
+            color: var(--color-ink);
+        }
+        .share-btn:hover {
+            background: var(--color-border);
+        }
+        .share-btn svg {
+            width: 20px;
+            height: 20px;
+        }
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            margin-right: 8px;
+        }
+        .nav-logo img {
+            height: 48px;
+            width: auto;
+        }
+        .site-branding {
+            font-family: var(--font-sans);
+            font-size: 12px;
+            color: var(--color-text-light);
+            font-weight: 400;
+            white-space: nowrap;
+        }
+        .read-nav-center {
+            display: flex;
+            align-items: center;
+        }
+    </style>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/reading.js"></script>
+    <script src="../js/ai-assistant.js"></script>
+</div>
+    </footer>
+
+    <div id="modal-privacy" class="footer-modal">
+        <div class="footer-modal-content">
+            <button class="footer-modal-close">&times;</button>
+            <h2>隐私说明</h2>
+            <div class="footer-modal-body">
+                <p><strong>静态网站，不跟踪，不记录</strong></p>
+                <p>本站为纯静态网站，不使用任何 Analytics 工具，不收集用户隐私数据。</p>
+                <p><strong>访问日志</strong></p>
+                <p>服务器仅记录基本访问日志用于安全防护，不会分析用户行为或追踪用户隐私。</p>
+                <p><strong>Cookies</strong></p>
+                <p>本站不使用任何 Cookies，用户的浏览记录不会被保存。</p>
+                <p><strong>版权声明</strong></p>
+                <p>本站所有内容版权归原作者及出版方所有。未经授权，禁止转载、复制或传播。引用请注明出处。</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-about" class="footer-modal">
+        <div class="footer-modal-content">
+            <button class="footer-modal-close">&times;</button>
+            <h2>关于我们</h2>
+            <div class="footer-modal-body">
+                <p><strong>联合丽格美学研究小组 & 写作小组</strong></p>
+                <p>我们是由医学、美学、历史等多学科背景研究者组成的跨学科团队。</p>
+                <p><strong>使命</strong></p>
+                <p>构建中国医疗美容的完整美学体系，从历史、文化、科学等多维度梳理美学发展脉络。</p>
+                <p><strong>《红颜·史记》</strong></p>
+                <p>本作品是美学体系研究的重要组成部分，从制度分析视角审视中国古代女性命运。</p>
+                <p><strong>持续更新</strong></p>
+                <p>本作品将陆续更新、出版更多章节和卷册。</p>
+                <p><strong>加入我们</strong></p>
+                <p>欢迎有志之士加入我们的研究写作团队，共同推进美学体系建设。</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-ai" class="footer-modal">
+        <div class="footer-modal-content">
+            <button class="footer-modal-close"> &times;</button>
+            <h2>AI辅助说明</h2>
+            <div class="footer-modal-body">
+                <p><strong>AI辅助资料查阅与交叉验证</strong></p>
+                <p>本系列书籍在研究和写作过程中，采用 AI 辅助进行资料搜集、文献梳理和交叉验证。</p>
+                <p><strong>AI内容明确标记</strong></p>
+                <p>所有由 AI 辅助生成或验证的内容，我们都会在相应位置进行明确标记，以确保学术透明性。</p>
+                <p><strong>人工审核</strong></p>
+                <p>AI 仅作为辅助工具，所有内容均经过人工审核、校正和补充，确保学术严谨性。</p>
+                <p><strong>责任声明</strong></p>
+                <p>如有引用或分析错误，责任由作者团队承担，欢迎读者指正。</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-publish" class="footer-modal">
+        <div class="footer-modal-content">
+            <button class="footer-modal-close"> &times;</button>
+            <h2>出版合作</h2>
+            <div class="footer-modal-body">
+                <p><strong>合作邀请</strong></p>
+                <p>我们欢迎各大出版社、IP产业机构开展多种形式的合作。</p>
+                <p><strong>合作形式</strong></p>
+                <ul>
+                    <li>纸质图书出版</li>
+                    <li>电子书发行</li>
+                    <li>有声书制作</li>
+                    <li>影视改编</li>
+                    <li>文化IP授权</li>
+                    <li>学术合作</li>
+                </ul>
+                <p><strong>联系我们</strong></p>
+                <p>微信：sooogooo</p>
+                <p>邮箱：yuxiaodong@beaucare.org</p>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .footer-modal-links { display: flex; justify-content: center; gap: 12px; margin-top: 16px; flex-wrap: wrap; }
+        .footer-modal-links a { color: var(--color-ink-muted); text-decoration: none; font-size: var(--text-xs); cursor: pointer; }
+        .footer-modal-links a:hover { color: var(--color-primary); text-decoration: underline; }
+        .footer-modal-links span { color: var(--color-border); }
+        .footer-modal { display: none; position: fixed; z-index: 10000; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); }
+        .footer-modal-content { background: var(--color-paper); margin: 10% auto; padding: 40px; border-radius: 12px; width: 90%; max-width: 600px; position: relative; }
+        .footer-modal-close { position: absolute; right: 20px; top: 15px; font-size: 28px; background: none; border: none; cursor: pointer; color: var(--color-text-light); }
+        .footer-modal-close:hover { color: var(--color-primary); }
+        .footer-modal h2 { color: var(--color-primary); font-family: var(--font-serif); margin-bottom: 24px; padding-bottom: 12px; border-bottom: 2px solid var(--color-border); }
+        .footer-modal-body { color: var(--color-text); line-height: 1.8; }
+        .footer-modal-body p { margin-bottom: 16px; }
+        .footer-modal-body ul { margin: 16px 0; padding-left: 24px; }
+        .footer-modal-body li { margin-bottom: 8px; }
+    </style>
+
+    <script>
+        (function() {
+            const modalLinks = document.querySelectorAll(".footer-modal-link");
+            const modals = document.querySelectorAll(".footer-modal");
+            const closeBtns = document.querySelectorAll(".footer-modal-close");
+
+            modalLinks.forEach(link => {
+                link.addEventListener("click", function(e) {
+                    e.preventDefault();
+                    const modalId = this.getAttribute("data-modal");
+                    const modal = document.getElementById("modal-" + modalId);
+                    if (modal) { modal.style.display = "block"; document.body.style.overflow = "hidden"; }
+                });
+            });
+
+            closeBtns.forEach(btn => {
+                btn.addEventListener("click", function() {
+                    this.closest(".footer-modal").style.display = "none";
+                    document.body.style.overflow = "";
+                });
+            });
+
+            window.addEventListener("click", function(e) {
+                if (e.target.classList.contains("footer-modal")) {
+                    e.target.style.display = "none";
+                    document.body.style.overflow = "";
+                }
+            });
+
+            window.addEventListener("keydown", function(e) {
+                if (e.key === "Escape") {
+                    modals.forEach(modal => modal.style.display = "none");
+                    document.body.style.overflow = "";
+                }
+            });
+        })();
+    </script>
+</div>
+    </footer>
+
+    <div id="modal-privacy" class="footer-modal">
+        <div class="footer-modal-content">
+            <button class="footer-modal-close">&times;</button>
+            <h2>隐私说明</h2>
+            <div class="footer-modal-body">
+                <p><strong>静态网站，不跟踪，不记录</strong></p>
+                <p>本站为纯静态网站，不使用任何 Analytics 工具，不收集用户隐私数据。</p>
+                <p><strong>访问日志</strong></p>
+                <p>服务器仅记录基本访问日志用于安全防护，不会分析用户行为或追踪用户隐私。</p>
+                <p><strong>Cookies</strong></p>
+                <p>本站不使用任何 Cookies，用户的浏览记录不会被保存。</p>
+                <p><strong>版权声明</strong></p>
+                <p>本站所有内容版权归原作者及出版方所有。未经授权，禁止转载、复制或传播。引用请注明出处。</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-about" class="footer-modal">
+        <div class="footer-modal-content">
+            <button class="footer-modal-close">&times;</button>
+            <h2>关于我们</h2>
+            <div class="footer-modal-body">
+                <p><strong>联合丽格美学研究小组 & 写作小组</strong></p>
+                <p>我们是由医学、美学、历史等多学科背景研究者组成的跨学科团队。</p>
+                <p><strong>使命</strong></p>
+                <p>构建中国医疗美容的完整美学体系，从历史、文化、科学等多维度梳理美学发展脉络。</p>
+                <p><strong>《红颜·史记》</strong></p>
+                <p>本作品是美学体系研究的重要组成部分，从制度分析视角审视中国古代女性命运。</p>
+                <p><strong>持续更新</strong></p>
+                <p>本作品将陆续更新、出版更多章节和卷册。</p>
+                <p><strong>加入我们</strong></p>
+                <p>欢迎有志之士加入我们的研究写作团队，共同推进美学体系建设。</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-ai" class="footer-modal">
+        <div class="footer-modal-content">
+            <button class="footer-modal-close"> &times;</button>
+            <h2>AI辅助说明</h2>
+            <div class="footer-modal-body">
+                <p><strong>AI辅助资料查阅与交叉验证</strong></p>
+                <p>本系列书籍在研究和写作过程中，采用 AI 辅助进行资料搜集、文献梳理和交叉验证。</p>
+                <p><strong>AI内容明确标记</strong></p>
+                <p>所有由 AI 辅助生成或验证的内容，我们都会在相应位置进行明确标记，以确保学术透明性。</p>
+                <p><strong>人工审核</strong></p>
+                <p>AI 仅作为辅助工具，所有内容均经过人工审核、校正和补充，确保学术严谨性。</p>
+                <p><strong>责任声明</strong></p>
+                <p>如有引用或分析错误，责任由作者团队承担，欢迎读者指正。</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-publish" class="footer-modal">
+        <div class="footer-modal-content">
+            <button class="footer-modal-close"> &times;</button>
+            <h2>出版合作</h2>
+            <div class="footer-modal-body">
+                <p><strong>合作邀请</strong></p>
+                <p>我们欢迎各大出版社、IP产业机构开展多种形式的合作。</p>
+                <p><strong>合作形式</strong></p>
+                <ul>
+                    <li>纸质图书出版</li>
+                    <li>电子书发行</li>
+                    <li>有声书制作</li>
+                    <li>影视改编</li>
+                    <li>文化IP授权</li>
+                    <li>学术合作</li>
+                </ul>
+                <p><strong>联系我们</strong></p>
+                <p>微信：sooogooo</p>
+                <p>邮箱：yuxiaodong@beaucare.org</p>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .footer-modal-links { display: flex; justify-content: center; gap: 12px; margin-top: 16px; flex-wrap: wrap; }
+        .footer-modal-links a { color: var(--color-ink-muted); text-decoration: none; font-size: var(--text-xs); cursor: pointer; }
+        .footer-modal-links a:hover { color: var(--color-primary); text-decoration: underline; }
+        .footer-modal-links span { color: var(--color-border); }
+        .footer-modal { display: none; position: fixed; z-index: 10000; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); }
+        .footer-modal-content { background: var(--color-paper); margin: 10% auto; padding: 40px; border-radius: 12px; width: 90%; max-width: 600px; position: relative; }
+        .footer-modal-close { position: absolute; right: 20px; top: 15px; font-size: 28px; background: none; border: none; cursor: pointer; color: var(--color-text-light); }
+        .footer-modal-close:hover { color: var(--color-primary); }
+        .footer-modal h2 { color: var(--color-primary); font-family: var(--font-serif); margin-bottom: 24px; padding-bottom: 12px; border-bottom: 2px solid var(--color-border); }
+        .footer-modal-body { color: var(--color-text); line-height: 1.8; }
+        .footer-modal-body p { margin-bottom: 16px; }
+        .footer-modal-body ul { margin: 16px 0; padding-left: 24px; }
+        .footer-modal-body li { margin-bottom: 8px; }
+    </style>
+
+    <script>
+        (function() {
+            const modalLinks = document.querySelectorAll(".footer-modal-link");
+            const modals = document.querySelectorAll(".footer-modal");
+            const closeBtns = document.querySelectorAll(".footer-modal-close");
+
+            modalLinks.forEach(link => {
+                link.addEventListener("click", function(e) {
+                    e.preventDefault();
+                    const modalId = this.getAttribute("data-modal");
+                    const modal = document.getElementById("modal-" + modalId);
+                    if (modal) { modal.style.display = "block"; document.body.style.overflow = "hidden"; }
+                });
+            });
+
+            closeBtns.forEach(btn => {
+                btn.addEventListener("click", function() {
+                    this.closest(".footer-modal").style.display = "none";
+                    document.body.style.overflow = "";
+                });
+            });
+
+            window.addEventListener("click", function(e) {
+                if (e.target.classList.contains("footer-modal")) {
+                    e.target.style.display = "none";
+                    document.body.style.overflow = "";
+                }
+            });
+
+            window.addEventListener("keydown", function(e) {
+                if (e.key === "Escape") {
+                    modals.forEach(modal => modal.style.display = "none");
+                    document.body.style.overflow = "";
+                }
+            });
+        })();
+    </script>
+</footer>
+</body>
+</html>
